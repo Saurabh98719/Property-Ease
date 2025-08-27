@@ -7,8 +7,7 @@
 body{
     height: 100vh;
     color: antiquewhite;
-    display: flex;
-     font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
@@ -17,7 +16,6 @@ body{
 }
 
 .nav-container{
-    height: 15%;
     width: 100%;
     background-color: rgb(57, 57, 112);
     display: flex;
@@ -29,6 +27,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 0.5rem 2rem;
 }
 
 .nav-header{
@@ -43,14 +42,17 @@ body{
 }
 
 #nav-logo{
-    width: 150px;
+    width: 120px;
+    height: auto;
     position: absolute;
     top: -5px;
 }
 
 .nav-search{
     display: flex;
+    align-items:center ;
     margin-top: 4px;
+    
 }
 
 
@@ -76,7 +78,82 @@ body{
 .nav-final{
     display: flex;
     gap: 3rem;
+    align-items: center;
     justify-content: space-between;
+}
+.sub-nav{
+    width: 100%;
+    background-color: rgb(57, 57, 112);
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+}
+.sub-nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    gap: 8rem;
+}
+.sub-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+}
+.sub-nav li a:hover{
+    color:orange
+}
+.new{
+    background: red;
+    color:white;
+    font-size: 0.7rem;
+    padding:0 4px;
+    border-radius: 3px;
+    margin-left: 4px;
+}
+
+.sub-nav ul li {
+    position: relative;
+}
+
+
+.sub-nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 180px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    z-index: 10;
+    flex-direction: column;
+    padding: 0;
+}
+
+.sub-nav ul li .dropdown li {
+    display: block;
+}
+
+.sub-nav ul li .dropdown li a {
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.sub-nav ul li .dropdown li a:hover {
+    background: #f0f0f0;
+    color: orange;
+}
+
+
+.sub-nav ul li:hover .dropdown {
+    display: block;
 }
 
 
