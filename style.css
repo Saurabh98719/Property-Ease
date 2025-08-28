@@ -172,3 +172,152 @@ body{
     color: black;
 }
 
+.hero-container{
+    max-width: 1080px;
+    color: rgb(55, 45, 45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.house{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: rgb(204, 243, 245);
+    height: 100px;
+    width: 250px;
+    border-radius: 5px;
+    padding-left: 5px;
+    gap: 10px;
+    font-size: small;
+    color: black;
+}
+
+#mini_img{
+    border-radius: 5px;
+}
+
+#mini_img:hover{
+    transform: scale(1.05);
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+.house-content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#mini-title:hover{
+    color: rgb(108, 108, 59);
+    transition-duration: 100ms;
+    cursor: pointer;
+}
+
+#mini-content{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+
+#mini-content:hover{
+    color: rgb(78, 78, 199);
+    cursor: pointer;
+}
+
+#house-rent-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.main-img{
+    position: relative;
+    margin-top: 2rem;
+    animation: slidingfromLeft 2s ease forwards;
+}
+
+#img-one{
+    border-radius: 5px;
+    height: 90%;
+}
+
+#intro{
+    position: absolute;
+    bottom: 15rem;
+    color: white;
+    font-size: 4rem;
+    line-height: 5rem;
+    width: 60%;
+    margin-left: 2rem;
+    animation: slidingfromLeft 2s ease forwards;
+    opacity: 0;
+}
+
+#main-btn{
+    position: absolute;
+    bottom: 5rem;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    animation: slidingfromLeft 2s ease forwards;
+}
+
+#explore-btn{
+    font-size: large;
+    padding: 0.5rem;
+    background-color: rgb(160, 36, 36);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#sign-btn{
+    font-size: large;
+    padding: 0.5rem;
+    background-color: rgb(103, 66, 226);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#explore-btn:hover{
+    transition: 200ms;
+    background-color: rgb(157, 25, 25);
+}
+
+#sign-btn:hover{
+    transition: 200ms;
+    background-color: rgb(80, 46, 253);
+}
+
+@keyframes slidingfromLeft {
+    0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
