@@ -6,13 +6,20 @@
 
 body{
     height: 100vh;
-    color: antiquewhite;
     font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
+    font-optical-sizing: auto;
+    font-weight: normal;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(26, 24, 24);
+    width: 100%;
 }
 
 .nav-container{
@@ -28,6 +35,10 @@ body{
     justify-content: space-evenly;
     align-items: center;
     padding: 0.5rem 2rem;
+}
+
+#nav-title{
+    color: aliceblue;
 }
 
 .nav-header{
@@ -54,7 +65,6 @@ body{
     margin-top: 4px;
     
 }
-
 
 #city-name{
     padding: 1rem 0.5rem;
@@ -320,4 +330,37 @@ body{
   }
 }
 
+.recommend-container{
+    position: relative;
+}
+
+#recommend-title{
+    font-weight: 700;
+}
+
+#recommend-title::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0px;
+    left: 50%;
+    /* background: black; */
+    position: absolute;
+    /* transition:  0.3s ease ; */
+    transition: transform 0.5s ease;
+    transform-origin: center;
+    transform: translateX(-50%) scaleX(0);
+}
+
+#recommend-title:hover{
+    color: rgb(115, 44, 182);
+    transition: 0s;
+    cursor: pointer;
+}
+
+#recommend-title:hover::after{
+    background: blue;
+    transform: translateX(-50%) scaleX(1);
+
+}
 
