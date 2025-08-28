@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,158 +6,156 @@
     <title>Property-Ease</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="nav-container">
-        <i><img id="nav-logo" src="images/logo.png" alt=""></i>
-
-        <div class="nav-upper">
-            <div class="nav-header">
-                <i><img src="images/menu.svg" id="nav-menu" alt=""></i>
-                <h1 id="title">PropertyEase</h1>
-            </div>
-
-            <div class="nav-search">
-                <div id="city">
-                    <select name="Delhi" id="city-name">
-                        <option value="Delhi">Delhi</option>
-                        <option value="Mumbai">Mumbai</option>
-                        <option value="Chennai">Chennai</option>
-                    </select>
+    <div class="content">
+        <section class="nav-container">
+            <i><img id="nav-logo" src="images/logo.png" alt=""></i>
+            <div class="nav-upper">
+                <div class="nav-header">
+                    <i><img src="images/menu.svg" id="nav-menu" alt=""></i>
+                    <h1 id="nav-title">PropertyEase</h1>
                 </div>
-                <div id="nav-find">
-                    <input type="text" id="find" placeholder="Search for properties...">
+                <div class="nav-search">
+                    <div id="city">
+                        <select name="Delhi" id="city-name">
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Chennai">Chennai</option>
+                        </select>
+                    </div>
+                    <div id="nav-find">
+                        <input type="text" name="" id="find" placeholder="Find the Locality">
+                    </div>
+                    <div id="search">
+                        <i><img src="images/search.svg" alt=""></i>
+                    </div>
                 </div>
-                <div id="search">
-                    <i><img src="images/search.svg" alt=""></i>
+                <div class="nav-final">
+                    <i><img src="images/star.svg" alt=""></i>
+                    <i><img src="images/mail.svg" alt=""></i>
+                    <i><img src="images/log-in.svg" alt=""></i>
                 </div>
             </div>
-            <div id="post-property">
-                  <button class="post-property-btn">
-                     Post Property
-                  </button>
+    
+    <div class="sub-nav">
+                <ul>
+                    <li>
+                        <a href="#">BUY</a>
+                        <ul class="dropdown">
+                            <li><a href="#">HOUSE</a></li>
+                            <li><a href="#">FLAT</a></li>
+                            <li><a href="#">EMPTY PLOTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">SELL</a>
+                        <ul class="dropdown">
+                            <li><a href="#">HOUSE</a></li>
+                            <li><a href="#">FLATS</a></li>
+                            <li><a href="#">EMPTY PLOTS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">RENT</a>
+                        <ul class="dropdown">
+                            <li><a href="#">HOUSE</a></li>
+                            <li><a href="#">APPARTMENT</a></li>
+                            <li><a href="#">FLOORS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">VIEW PROPERTY</a>
+                        <ul class="dropdown">
+                            <li><a href="#">NEAR YOU</a></li>
+                            <li><a href="#">GREEN HOUSES</a></li>
+                            <li><a href="#">VALLAYS</a></li>
+                        </ul>
+            
+                    </li>
+                    <li>
+                        <a href="#">STUDENT SPECIAL</a>
+                        <ul class="dropdown">
+                            <li><a href="#">HOSTELS/PG'S</a></li>
+                            <li><a href="#">RENT ROOMS</a></li>
+                            <li><a href="#">POST REVIEW</a></li>
+                        </ul>
+                    </li>
+                     </li>
+                    <li>
+                        <a href="#">GREEN PROPERTIES</a>
+                        <ul class="dropdown">
+                            <li><a href="#">GREEN PROPERTY NEAR YOU</a></li>
+                            <li><a href="#">GREEN COMMERCIAL PLACES</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
             </div>
-
-            <div class="nav-final">
-                <i><img src="images/star.svg" alt=""></i>
-                <i><img src="images/mail.svg" alt=""></i>
-                <i><img src="images/log-in.svg" alt=""></i>
-            </div>
-        </div>
-
-        
-       <div class="sub-nav">
-            <ul>
-                <li>
-                    <a href="#">BUY</a>
-                    <ul class="dropdown">
-                        <li><a href="#">HOUSE</a></li>
-                        <li><a href="#">FLAT</a></li>
-                        <li><a href="#">EMPTY PLOTS</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">SELL</a>
-                    <ul class="dropdown">
-                        <li><a href="#">HOUSE</a></li>
-                        <li><a href="#">FLATS</a></li>
-                        <li><a href="#">EMPTY PLOTS</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">RENT</a>
-                    <ul class="dropdown">
-                        <li><a href="#">HOUSE</a></li>
-                        <li><a href="#">APPARTMENT</a></li>
-                        <li><a href="#">FLOORS</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">VIEW PROPERTY</a>
-                    <ul class="dropdown">
-                        <li><a href="#">NEAR YOU</a></li>
-                        <li><a href="#">GREEN HOUSES</a></li>
-                        <li><a href="#">VALLAYS</a></li>
-                    </ul>
-        
-                </li>
-                <li>
-                    <a href="#">STUDENT SPECIAL</a>
-                    <ul class="dropdown">
-                        <li><a href="#">HOSTELS/PG'S</a></li>
-                        <li><a href="#">RENT ROOMS</a></li>
-                        <li><a href="#">POST REVIEW</a></li>
-                    </ul>
-                </li>
-                 </li>
-                <li>
-                    <a href="#">GREEN PROPERTIES</a>
-                    <ul class="dropdown">
-                        <li><a href="#">GREEN PROPERTY NEAR YOU</a></li>
-                        <li><a href="#">GREEN COMMERCIAL PLACES</a></li>
-                        
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </section>
-
+        </section>
+    
         <section class="hero-container">
-        <div class="hero-content">
-
-            <!-- Mini Interface Part -->
-
-            <div class="house">
-                <!-- Apartment -->
-                <img src="images/Apartment.webp" width="40%" height="95%" alt="" id="mini_img">
-                <div class="house-content">
-                    <h3 id="mini-title">Buy-Apartment</h3>
-                    <span id="mini-content">Mohan-Estate <br> 45+ for sale </span>
+            <div class="hero-content">
+    
+                <!-- Mini Interface Part -->
+    
+                <div class="house">
+                    <!-- Apartment -->
+                    <img src="images/Apartment.webp" width="40%" height="95%" alt="" id="mini_img">
+                    <div class="house-content">
+                        <h3 id="mini-title">Buy-Apartment</h3>
+                        <span id="mini-content">Mohan-Estate <br> 45+ for sale </span>
+                    </div>
                 </div>
-            </div>
-            <div class="house">
-                <!-- Villa -->
-                <img src="images/villa.jpeg" width="40%" height="95%" alt="" id="mini_img">
-                <div class="house-content">
-                    <h3 id="mini-title">Buy-Villa</h3>
-                    <span id="mini-content">Mohan-Estate <br> 60+ for sale</span>
+                <div class="house">
+                    <!-- Villa -->
+                    <img src="images/villa.jpeg" width="40%" height="95%" alt="" id="mini_img">
+                    <div class="house-content">
+                        <h3 id="mini-title">Buy-Villa</h3>
+                        <span id="mini-content">Mohan-Estate <br> 60+ for sale</span>
+                    </div>
                 </div>
-            </div>
-            <div class="house">
-                <!-- Plot -->
-                <img src="images/plot.webp" width="40%" height="95%" alt="" id="mini_img">
-                <div class="house-content">
-                    <h3 id="mini-title">Buy-Plot</h3>
-                    <span id="mini-content">Mohan-Estate <br> 60+ for sale</span>
+                <div class="house">
+                    <!-- Plot -->
+                    <img src="images/plot.webp" width="40%" height="95%" alt="" id="mini_img">
+                    <div class="house-content">
+                        <h3 id="mini-title">Buy-Plot</h3>
+                        <span id="mini-content">Mohan-Estate <br> 60+ for sale</span>
+                    </div>
                 </div>
-            </div>
-            <div class="house">
-                <!-- Rent -->
-                <img src="images/rent.webp" width="40%" height="95%" alt="" id="mini_img">
-                <div class="house-content">
-                    <h3 id="mini-title">Rent-Apartment</h3>
-                    <div id="house-rent-content">
-                        <a href="#" id="mini-content">1 BHK</a>
-                        <a href="#" id="mini-content">2 BHK</a>
-                        <a href="#" id="mini-content">3 BHK</a>
+                <div class="house">
+                    <!-- Rent -->
+                    <img src="images/rent.webp" width="40%" height="95%" alt="" id="mini_img">
+                    <div class="house-content">
+                        <h3 id="mini-title">Rent-Apartment</h3>
+                        <div id="house-rent-content">
+                            <a href="#" id="mini-content">1 BHK</a>
+                            <a href="#" id="mini-content">2 BHK</a>
+                            <a href="#" id="mini-content">3 BHK</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Image Section -->
-         <div class="main-img">
-            <img src="images/intro-img.png" alt="" width="100%" id="img-one" loading="lazy">
-            <h1 id="intro">The Best Place is Right Here</h1>
-            <div id="main-btn">
-                <button id="explore-btn">Explore <img src="images/chevron-right.svg" alt=""></button>
-                <button id="sign-btn">Sign In<img src="images/chevron-right.svg" alt=""> </button>
+    
+            <!-- Image Section -->
+             <div class="main-img">
+                <img src="images/intro-img.png" alt="" width="100%" id="img-one" loading="lazy">
+                <h1 id="intro">The Best Place is Right Here</h1>
+                <div id="main-btn">
+                    <button id="explore-btn">Explore <img src="images/chevron-right.svg" alt=""></button>
+                    <button id="sign-btn">Sign In<img src="images/chevron-right.svg" alt=""> </button>
+                </div>
+             </div>
+    
+            </section>
+    
+        <section class="main-container">
+            <div class="recommend-container">
+                <h1 id="recommend-title">RECOMMEND PROPERTIES</h1>
             </div>
-         </div>
-
-        </section>
+        </section>    
+    </div>
 </body>
 </html>
-
