@@ -353,7 +353,7 @@ body{
 #recommend-title{
     font-weight: 700;
     position: relative;
-    display: inline-block;
+    font-size: x-large;
 }
 
 
@@ -444,6 +444,7 @@ body{
 }
 
 .star-container{
+    margin-top: 2rem;
     position: relative;
 }
 
