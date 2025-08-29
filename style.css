@@ -433,6 +433,142 @@ body{
   background: hsl(233, 57%, 37%);
 }
 
+.star-container{
+    position: relative;
+}
+
+#star-title{
+    font-weight: 700;
+    font-size: x-large;
+    position: relative;
+}
+
+#star-title::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0px;
+    left: 50%;
+    /* background: black; */
+    position: absolute;
+    /* transition:  0.3s ease ; */
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    transform: translateX(-50%) scaleX(0);
+}
+
+#star-title:hover{
+    color: rgb(115, 44, 182);
+    transition: 0s;
+}
+
+#star-title:hover::after{
+    background: blue;
+    transform: translateX(-50%) scaleX(1);
+}
+
+.star-content{
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    gap: 1rem;
+    overflow-x: auto;
+    margin-top: 1rem;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.star-box{
+    flex: 0 0 15rem;
+    /* width: 15rem; */
+    height: 18rem;
+    /* background-color: beige; */
+    border-radius: 10px;
+    border: solid 1px rgb(187, 160, 160);
+}
+
+.star-box:hover{
+    border: none;
+    transform: scale(1.01);
+    transition-duration: 300ms;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.star-box-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+#star-img{
+    width: 90%;
+    height: 8rem;
+    border-radius: 5px;
+    transition: 0s;
+}
+
+#star-img:hover{
+    transform: scale(1.05);
+    transition-duration: 200ms;
+}
+
+#star-para{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(54, 93, 94);
+}
+
+#star-para:hover{
+    color: rgb(19, 33, 33);
+}
+
+#star-rate{
+    display: flex;
+    gap: 2px;
+    background-color: rgb(227, 227, 91);
+    padding: 1px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#star-rating{
+    font-weight: 700;
+}
+
+#star-link{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(68, 56, 210);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+#star-link:hover{
+    background-color: rgb(21, 21, 149);
+    transition-duration: 200ms;
+    color: rgb(16, 169, 169);
+}
+
+#star-right{
+    background-color: blue;
+    position: absolute;
+    right: 0;
+    bottom: 7rem;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
 
 
 
