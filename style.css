@@ -6,6 +6,9 @@
 
 body{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -15,14 +18,18 @@ body{
 }
 
 .content{
+    max-width: 1080px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgb(26, 24, 24);
-    width: 100%;
 }
 
 .nav-container{
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     width: 100%;
     background-color: rgb(57, 57, 112);
     display: flex;
@@ -183,6 +190,7 @@ body{
 }
 
 .hero-container{
+    margin-top: 6rem;
     max-width: 1080px;
     color: rgb(55, 45, 45);
     display: flex;
@@ -330,10 +338,14 @@ body{
   }
 }
 
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .recommend-container{
     position: relative;
-    
-   
 }
 
 
@@ -342,7 +354,6 @@ body{
     font-weight: 700;
     position: relative;
     display: inline-block;
-     
 }
 
 
@@ -356,7 +367,7 @@ body{
     /* background: black; */
     position: absolute;
     /* transition:  0.3s ease ; */
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     transform-origin: center;
     transform: translateX(-50%) scaleX(0);
 }
@@ -364,7 +375,6 @@ body{
 #recommend-title:hover{
     color: rgb(115, 44, 182);
     transition: 0s;
-    cursor: pointer;
 }
 
 #recommend-title:hover::after{
@@ -561,11 +571,6 @@ body{
     bottom: 7rem;
     border-radius: 100%;
 }
-
-
-
-
-
 
 
 
