@@ -565,7 +565,13 @@ body{
     color: rgb(16, 169, 169);
 }
 
-
+#star-right{
+    background-color: blue;
+    position: absolute;
+    right: 0;
+    bottom: 7rem;
+    border-radius: 100%;
+}
 
 
 
