@@ -5,10 +5,10 @@
 }
 
 body{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -18,8 +18,11 @@ body{
 }
 
 .content{
-    color: rgb(26, 24, 24);
     max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(26, 24, 24);
 }
 
 .nav-container{
@@ -342,13 +345,18 @@ body{
 }
 
 .recommend-container{
+    position: relative;
+}
+
+
+
+#recommend-title{
     font-weight: 700;
+    position: relative;
     font-size: x-large;
 }
 
-#recommend-title{
-    position: relative;
-}
+
 
 #recommend-title::after{
     content: "";
@@ -372,9 +380,71 @@ body{
 #recommend-title:hover::after{
     background: blue;
     transform: translateX(-50%) scaleX(1);
+
+}
+.recommend-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+
+.recommend-item {
+  flex: 0 0 auto;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 87%);
+  border-radius: 12px;
+  scroll-snap-align: start;
+  transition: 0.3s ease;
+}
+
+.recommend-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.recommend-item img {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recommend-item h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.recommend-item p {
+  font-size: 14px;
+  color: #444;
+}
+
+.recommend-item a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 7px;
+  font-size: 14px;
+  background: hsl(231, 48%, 48%);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.recommend-item a:hover {
+  background: hsl(233, 57%, 37%);
 }
 
 .star-container{
+    margin-top: 2rem;
     position: relative;
 }
 
@@ -502,6 +572,8 @@ body{
     bottom: 7rem;
     border-radius: 100%;
 }
+
+
 
 
 
