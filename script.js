@@ -10,3 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
             slider.scrollLeft += scrollAmount;
         });
 })
+
+  const navbar = document.getElementById("nav-container");
+  const studentSection = document.getElementById("student-section");
+
+  window.addEventListener("scroll", () => {
+    const sectionTop = studentSection.offsetTop;
+    const sectionHeight = studentSection.offsetHeight;
+    const scrollPos = window.scrollY;
+
+
+    if (scrollPos + 100 >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+      navbar.style.display = "none";  // Hide navbar
+    } else {
+      navbar.style.display = "flex";  // Show navbar
+    }
+  });
