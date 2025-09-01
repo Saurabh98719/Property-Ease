@@ -6,11 +6,6 @@
 
 body{
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    background: rgb(251, 246, 246);
-    align-items: center;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -20,28 +15,18 @@ body{
 }
 
 .content{
-    max-width: 1080px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgb(26, 24, 24);
+    width: 100%;
 }
 
 .nav-container{
-    position:fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
     width: 100%;
     background-color: rgb(57, 57, 112);
     display: flex;
     flex-direction: column;
-}
-
-#nav-container.hidden {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px); /* slide up only */
 }
 
 .nav-upper{
@@ -68,10 +53,11 @@ body{
 }
 
 #nav-logo{
-    width: 100px;
+    width: 150px;
     height: auto;
-    position: absolute;
-    top: -5px;
+    position: static;
+    margin-right: 12px;
+    margin-left: 10px;
 }
 
 .nav-search{
@@ -198,7 +184,6 @@ body{
 }
 
 .hero-container{
-    margin-top: 6rem;
     max-width: 1080px;
     color: rgb(55, 45, 45);
     display: flex;
@@ -346,14 +331,10 @@ body{
   }
 }
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 .recommend-container{
     position: relative;
+    
+   
 }
 
 
@@ -361,7 +342,8 @@ body{
 #recommend-title{
     font-weight: 700;
     position: relative;
-    font-size: x-large;
+    display: inline-block;
+     
 }
 
 
@@ -375,7 +357,7 @@ body{
     /* background: black; */
     position: absolute;
     /* transition:  0.3s ease ; */
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     transform-origin: center;
     transform: translateX(-50%) scaleX(0);
 }
@@ -383,11 +365,13 @@ body{
 #recommend-title:hover{
     color: rgb(115, 44, 182);
     transition: 0s;
+    cursor: pointer;
 }
 
 #recommend-title:hover::after{
     background: blue;
     transform: translateX(-50%) scaleX(1);
+
 }
 .recommend-slider {
   display: flex;
@@ -451,7 +435,6 @@ body{
 }
 
 .star-container{
-    margin-top: 2rem;
     position: relative;
 }
 
@@ -487,30 +470,29 @@ body{
 
 .star-content{
     display: flex;
-    gap: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    gap: 1rem;
     overflow-x: auto;
     margin-top: 1rem;
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
 
-.star-box {
-  flex: 0 0 auto;
-  width: 200px;
-  padding: 15px;
-  text-align: center;
-  background: hsl(0, 0%, 100%);
-  border: 1px solid hsl(0, 0%, 87%);
-  border-radius: 12px;
-  scroll-snap-align: start;
-  transition: 0.3s ease;
+.star-box{
+    flex: 0 0 15rem;
+    /* width: 15rem; */
+    height: 18rem;
+    /* background-color: beige; */
+    border-radius: 10px;
+    border: solid 1px rgb(187, 160, 160);
 }
 
 .star-box:hover{
+    border: none;
     transform: scale(1.01);
-  transform: translateY(-6px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-
+    transition-duration: 300ms;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 .star-box-content{
@@ -523,10 +505,15 @@ body{
 }
 
 #star-img{
-    width: 100%;
-    height: 140px;
+    width: 90%;
+    height: 8rem;
     border-radius: 5px;
-    object-fit: cover;
+    transition: 0s;
+}
+
+#star-img:hover{
+    transform: scale(1.05);
+    transition-duration: 200ms;
 }
 
 #star-para{
@@ -542,7 +529,7 @@ body{
 #star-rate{
     display: flex;
     gap: 2px;
-    background-color: rgb(237, 237, 171);
+    background-color: rgb(227, 227, 91);
     padding: 1px 5px;
     align-items: center;
     justify-content: center;
@@ -556,7 +543,7 @@ body{
     text-decoration: none;
     font-size: medium;
     font-weight: bold;
-    background: hsl(231, 48%, 48%);
+    background-color: rgb(68, 56, 210);
     padding: 5px 10px;
     color: white;
     border-radius: 3px;
@@ -565,6 +552,7 @@ body{
 #star-link:hover{
     background-color: rgb(21, 21, 149);
     transition-duration: 200ms;
+    color: rgb(16, 169, 169);
 }
 
 #star-right{
@@ -574,7 +562,6 @@ body{
     bottom: 7rem;
     border-radius: 100%;
 }
-
 #star-left{
     background-color: blue;
     position: absolute;
@@ -603,7 +590,7 @@ body{
 .student-left{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 10px;
     position: relative;
 }
 
@@ -624,7 +611,7 @@ body{
 }
 
 #university-search{
-    padding: 5px 30px;
+    padding: 5px 20px;
     width: 25rem;
     border: rgb(217, 195, 195) solid 1px;
     border-radius: 5px;
@@ -667,16 +654,14 @@ body{
     transform: translateX(-50%) scaleX(1);
 }
 
-#student-title-two:hover{
-    color: rgb(115, 44, 182);
-}
-
 
 .student-box{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
+
+
 
 .student-box-content{
     margin-top: 1rem;
@@ -685,20 +670,14 @@ body{
     padding: 1rem;
     border: rgb(217, 195, 195) solid 1px;
     background-color: rgb(252, 249, 246);
-    border-radius: 15px;
+    border-radius: 10px;
     transition: 0.3s ease;
     z-index: 900;
-    gap: 5px;
 }
 
 .student-box-content:hover{
     transform: translateY(-6px) scale(1.01);
     box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-}
-
-#student-box-img{
-    width: 100%;
-    border-radius: 5px;
 }
 
 #student-reviews{
@@ -715,39 +694,6 @@ body{
     border-radius: 3px;
 }
 
-#student-facility-btn{
-    background:  hsl(231, 37%, 53%);
-    color: white;
-    border: none;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-#student-price{
-    display: flex;
-    gap: 3px;
-}
-
-#student-btn{
-    padding: 0.5rem;
-    font-size: large;
-    background:  hsl(231, 48%, 48%);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    width: 50%;
-    position: relative;
-    left: 4rem;
-    top: 0.5rem;
-    cursor: pointer;
-    font-weight:600;
-}
-
-#student-btn:hover{
-    transition-duration: 500ms;
-    background-color: rgb(21, 21, 149);
-}
-
 .student-right{
     max-width: 50%;
 }
@@ -755,11 +701,141 @@ body{
 #student-img{
     width: 60rem;
     position: relative;
-    right: 10rem;
-    height: 80%;
-    
+    right: 20rem;
 }
 
+#student-box-img{
+    width: 15rem;
+    border-radius: 5px;
+}
+.green-property {
+  margin: 3rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.green {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.green-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+
+
+.green-slogon {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: hsl(123, 46%, 34%);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.green-subtitle {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  font-weight: 700;
+  color: black;
+}
+
+.green-desciption {
+  color: hsl(0, 0%, 20%);
+  margin-bottom: 1.5rem;
+}
+
+.green-btn {
+  background: hsl(123, 46%, 36%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.green-btn:hover {
+  background: hsl(123, 47%, 27%);
+}
+
+
+
+#top-rated h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+
+#top-rated h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: hsl(211, 100%, 50%); 
+    transition: width 0.3s ease;
+}
+
+
+#top-rated h2:hover::after {
+    width: 100%;
+}
+
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+
+.rating-card {
+    border: 1px solid hsl(0, 0%, 87%);
+    border-radius: 10px;
+    padding: 15px;
+    background: whitesmoke;
+    transition: transform 0.2s;
+}
+
+.rating-card:hover {
+    transform: scale(1.03);
+}
+
+
+.rating-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.rating-card h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.rating {
+    color: hsl(0, 1%, 19%);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: hsl(123, 46%, 34%);
+}
 
 
 
