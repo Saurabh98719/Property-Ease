@@ -8,11 +8,16 @@ sellers,and renters to connect,access verified properties,and complete transacti
 
 
 -> TECH STACK
+
 FRONTEND --------- HTML,CSS,Tailwind CSS,React.js
 BACKEND ---------- Node.js
 DATABASE---------- MongoDB
 API INTEGRATION ----- Google Maps API
 HOSTING ------------Frontend on Vercel, Backend on Railway
+
+->WORKFLOW
+
+Our property website workflow begins with users searching and filtering properties, viewing detailed listings, and signing up to save favorites, chat with landlords, or book visits. Secure escrow payments and digital agreements ensure trust, followed by feedback and reviews after move-in. Property owners register, list verified properties, manage leads, and receive payments, while admins oversee verification, moderation, dispute resolution, and revenue through commissions and subscriptions. The system runs on a user-friendly frontend, a backend for listings, chat, and payments, a database for records, and an admin panel for control.
 
 
 -> LINKEDIN I'D
