@@ -134,12 +134,6 @@ body{
     flex-wrap: wrap;
 }
 
-@media (max-width:1200px){
-    .nav-final{
-        
-    }
-}
-
 
 .action-buttons {
             display: flex;
@@ -169,7 +163,7 @@ body{
             transform: translateY(-2px);
         }
 
-        .action-btn.favorites {
+        .action-btn.favourites {
             background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
         }
 
@@ -180,6 +174,7 @@ body{
         .action-btn.login {
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         }
+        
 .sub-nav{
     width: 100%;
     background-color: rgb(57, 57, 112);
