@@ -20,8 +20,22 @@ HOSTING ------------Frontend on Vercel, Backend on Railway
 Our property website workflow begins with users searching and filtering properties, viewing detailed listings, and signing up to save favorites, chat with landlords, or book visits. Secure escrow payments and digital agreements ensure trust, followed by feedback and reviews after move-in. Property owners register, list verified properties, manage leads, and receive payments, while admins oversee verification, moderation, dispute resolution, and revenue through commissions and subscriptions. The system runs on a user-friendly frontend, a backend for listings, chat, and payments, a database for records, and an admin panel for control.
 
 
--> LINKEDIN I'D
-1) Mohit Upadhyay ------------https://www.linkedin.com/in/mohit-upadhyay-395a14311
-2) SaurbhKumar ---------------https://www.linkedin.com/in/saurabh-kumar-00a2b333a
-3) Deepak -------------------http://linkedin.com/in/deepak-p-027b51363
-4) Piyush Kumar Singh -------https://www.linkedin.com/in/piyush-kumar-singh-5a9ba0324
+
+## 📫 Team Socials  
+
+- Team Member 1: Mohit Upadhyay  
+  Email: mohitupadhyay1025@gmail.com  
+  LinkedIn: []https://www.linkedin.com/in/mohit-upadhyay-395a14311/
+
+
+- Team Member 2: Deepak
+  Email: deepakpal63a@gmail.com
+  LinkedIn: http://linkedin.com/in/deepak-p-027b51363
+
+- Team Member 3:Saurbh Kumar
+  Email:ksaurbh98719@gmail.com
+  LinkedIn:https://www.linkedin.com/in/saurabh-kumar-00a2b333a
+
+- **Team Member 4: Piyush kumar singh 
+  Email: piyushs010107@gmail.com
+  LinkedIn:https://www.linkedin.com/in/piyush-kumar-singh-5a9ba0324
