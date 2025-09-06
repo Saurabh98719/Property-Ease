@@ -11,7 +11,7 @@ DATABASE---------- MongoDB
 API INTEGRATION ----- Google Maps API
 HOSTING ------------Frontend on Vercel, Backend on Railway
 -> LINKEDIN I'D
-          1) Mohit Upadhyay ------------https://www.linkedin.com/in/mohit-upadhyay-395a14311
-          2) SaurbhKumar ---------------https://www.linkedin.com/in/saurabh-kumar-00a2b333a
-          3) Deepak -------------------http://linkedin.com/in/deepak-p-027b51363
-          4) Piyush Kumar Singh -------https://www.linkedin.com/in/piyush-kumar-singh-5a9ba0324
+1) Mohit Upadhyay ------------https://www.linkedin.com/in/mohit-upadhyay-395a14311
+2) SaurbhKumar ---------------https://www.linkedin.com/in/saurabh-kumar-00a2b333a
+3) Deepak -------------------http://linkedin.com/in/deepak-p-027b51363
+4) Piyush Kumar Singh -------https://www.linkedin.com/in/piyush-kumar-singh-5a9ba0324
