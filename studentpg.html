@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Apartments - Rajouri Garden</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #e0f2fe;
+      color: #0c4a6e;
+    }
+    .property-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .property-card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .property-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .property-card h3 {
+      margin: 0.5rem 0;
+    }
+    .property-card p {
+      font-size: 0.9rem;
+    }
+    .rent-btn {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .rent-btn:hover {
+      background-color: #1e3a8a;
+    }
+
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      text-align: left;
+      position: relative;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .modal h2 {
+      margin-top: 0;
+    }
+    .modal ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .modal .rent-btn {
+      display: block;
+      margin: 1rem auto 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Student Housing in Rajouri Garden, Delhi</h1>
+  <p>Affordable PGs, hostels, and apartments for students near metro & colleges.</p>
+</header>
+
+<section class="property-container">
+  <div class="property-card">
+    <img src="images/img6.jpg" alt="Student PG 1">
+    <h3>Shared PG Rooms</h3>
+    <p>₹6,000/month – Includes meals, Wi-Fi, laundry.</p>
+    <button class="rent-btn" onclick="openModal('modal1')">View Details</button>
+  </div>
+
+  <div class="property-card">
+    <img src="images/img7.jpg" alt="Student PG 2">
+    <h3>1 RK Furnished</h3>
+    <p>₹9,500/month – Single room with kitchen, Wi-Fi, metro nearby.</p>
+    <button class="rent-btn" onclick="openModal('modal2')">View Details</button>
+  </div>
+
+  <div class="property-card">
+    <img src="images/img8.jpg" alt="Student PG 3">
+    <h3>1 BHK for Sharing</h3>
+    <p>₹12,000/month – Ideal for 2 students, semi-furnished, safe locality.</p>
+    <button class="rent-btn" onclick="openModal('modal3')">View Details</button>
+  </div>
+
+  <div class="property-card">
+    <img src="images/img5.jpg" alt="Student PG 4">
+    <h3>Premium Student Hostel</h3>
+    <p>₹15,000/month – AC rooms, gym, study area, 24x7 security.</p>
+    <button class="rent-btn" onclick="openModal('modal4')">View Details</button>
+  </div>
+</section>
+
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+    <h2>Shared PG Rooms - Uttam Nagar</h2>
+    <p><b>Rent:</b> ₹6,000/month</p>
+    <p><b>Amenities:</b></p>
+    <ul>
+      <li>3-sharing rooms with attached washroom</li>
+      <li>Meals included (Breakfast + Dinner)</li>
+      <li>High-speed Wi-Fi</li>
+      <li>Laundry service included</li>
+      <li>500m from Uttam Nagar East Metro</li>
+    </ul>
+    <button class="rent-btn">Rent Now</button>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+    <h2>1 RK Furnished Room</h2>
+    <p><b>Rent:</b> ₹9,500/month</p>
+    <p><b>Amenities:</b></p>
+    <ul>
+      <li>Fully furnished with Bed, Table, and Cupboard</li>
+      <li>Private kitchen & washroom</li>
+      <li>Free Wi-Fi & water supply</li>
+      <li>Walking distance to Metro & coaching hubs</li>
+    </ul>
+    <button class="rent-btn">Rent Now</button>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+    <h2>1 BHK for Sharing</h2>
+    <p><b>Rent:</b> ₹12,000/month</p>
+    <p><b>Amenities:</b></p>
+    <ul>
+      <li>1 Bedroom + Kitchen + Washroom</li>
+      <li>Ideal for 2 students sharing</li>
+      <li>Semi-furnished (Bed, Fan, Cupboard)</li>
+      <li>CCTV Security & Gated Society</li>
+    </ul>
+    <button class="rent-btn">Rent Now</button>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+    <h2>Premium Student Hostel</h2>
+    <p><b>Rent:</b> ₹15,000/month</p>
+    <p><b>Amenities:</b></p>
+    <ul>
+      <li>Fully furnished AC rooms</li>
+      <li>Common study area & library</li>
+      <li>Gym & recreation zone</li>
+      <li>24x7 Security & Biometric Entry</li>
+      <li>Meals & housekeeping included</li>
+    </ul>
+    <button class="rent-btn">Rent Now</button>
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "flex";
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+</body>
+</html>

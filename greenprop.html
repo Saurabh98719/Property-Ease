@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Properties - Property Ease</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0fdf4;
+      color: #065f46;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+    .property-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .property-card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .property-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .property-card h3 {
+      margin: 0.5rem 0;
+    }
+    .property-card p {
+      font-size: 0.9rem;
+    }
+    .green-btn {
+      background-color: #16a34a;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .green-btn:hover {
+      background-color: #15803d;
+    }
+
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .modal-content {
+      background-color: #ffffff;
+      margin: 5% auto;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      text-align: left;
+      position: relative;
+    }
+    .modal-content h2 {
+      margin-top: 0;
+      color: #065f46;
+    }
+    .modal-content p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+    .close-btn {
+      color: #065f46;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .buy-btn {
+      background-color: #f59e0b;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.4rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1.2rem;
+      font-size: 1rem;
+    }
+    .buy-btn:hover {
+      background-color: #b45309;
+    }
+    ul {
+      margin: 0.5rem 0 1rem 1.2rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Green Living Properties</h1>
+  <p>Discover sustainable homes and apartments that save energy and protect the environment.</p>
+</header>
+
+<section class="property-container">
+  <div class="property-card">
+    <img src="images/img1.jpg" alt="Green Apartment">
+    <h3>Eco Apartment</h3>
+    <p>Energy-efficient apartment with solar panels and rainwater harvesting.</p>
+    <button class="green-btn" onclick="openModal('modal1')">View Details</button>
+  </div>
+
+  <div class="property-card">
+    <img src="images/img2.jpg" alt="Green Villa">
+    <h3>Sustainable Villa</h3>
+    <p>Luxury villa built with eco-friendly materials and smart water-saving features.</p>
+    <button class="green-btn" onclick="openModal('modal2')">View Details</button>
+  </div>
+
+  <div class="property-card">
+    <img src="images/img3.jpg" alt="Eco-Friendly Home">
+    <h3>Eco-Friendly Home</h3>
+    <p>Green-certified family home with advanced waste management systems.</p>
+    <button class="green-btn" onclick="openModal('modal3')">View Details</button>
+  </div>
+
+  <div class="property-card">
+    <img src="images/img4.jpg" alt="Solar Home">
+    <h3>Solar-Powered Home</h3>
+    <p>Fully solar-powered independent home with modern design.</p>
+    <button class="green-btn" onclick="openModal('modal4')">View Details</button>
+  </div>
+</section>
+
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+    <h2>Eco Apartment</h2>
+    <p><b>Location:</b> Koramangala, Bangalore</p>
+    <p><b>Price:</b> ₹85 Lakhs</p>
+    <p><b>Size:</b> 2 BHK | 1200 sq.ft</p>
+    <p><b>Features:</b></p>
+    <ul>
+      <li>Solar panels for energy savings</li>
+      <li>Rainwater harvesting system</li>
+      <li>Green-certified building</li>
+    </ul>
+    <p><b>Nearby:</b> Forum Mall (1 km), Christ University (2 km), Metro Station (0.8 km)</p>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+    <h2>Sustainable Villa</h2>
+    <p><b>Location:</b> Alkapuri, Vadodara</p>
+    <p><b>Price:</b> ₹1.8 lakh</p>
+    <p><b>Size:</b> 4 BHK | 2800 sq.ft</p>
+    <p><b>Features:</b></p>
+    <ul>
+      <li>Constructed with eco-friendly materials</li>
+      <li>LED lighting and smart water fixtures</li>
+      <li>Large garden with organic waste recycling</li>
+    </ul>
+    <p><b>Nearby:</b> Inorbit Mall (2 km), Railway Station (3 km), Hospitals (1.5 km)</p>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+    <h2>Eco-Friendly Home</h2>
+    <p><b>Location:</b> Salt Lake, Kolkata</p>
+    <p><b>Price:</b> ₹1.2 lakh</p>
+    <p><b>Size:</b> 3 BHK | 1600 sq.ft</p>
+    <p><b>Features:</b></p>
+    <ul>
+      <li>Certified by Indian Green Building Council</li>
+      <li>Smart waste management system</li>
+      <li>Energy-efficient appliances included</li>
+    </ul>
+    <p><b>Nearby:</b> City Centre Mall (1.2 km), Sector V IT Hub (2.5 km), Schools (1 km)</p>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+    <h2>Solar-Powered Home</h2>
+    <p><b>Location:</b> Indiranagar, Bangalore</p>
+    <p><b>Price:</b> ₹2.3 lakh</p>
+    <p><b>Size:</b> 5 BHK | 3200 sq.ft</p>
+    <p><b>Features:</b></p>
+    <ul>
+      <li>100% solar-powered with battery backup</li>
+      <li>Water-saving plumbing systems</li>
+      <li>Smart home automation</li>
+    </ul>
+    <p><b>Nearby:</b> MG Road (3 km), Metro Station (1 km), Hospitals (2 km)</p>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+  window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
